@@ -6,10 +6,10 @@ import smtplib, ssl
 ####--- SETTINGS DICTIONARY FOR MAIL SERVER VARIABLES----####
 ####-----------------------------------------------------####
 smtp_server_settings = {
-	'host':'mail.minifxexperttrading.com',
+	'host':'mail.example.com',
 	'port':465,
-	'username':'site@minifxexperttrading.com',
-	'password':'MINIFXexpertTrading',
+	'username':'site@example.com',
+	'password':'',
 }
 
 ####-----------------------------------------------------####
@@ -18,7 +18,7 @@ smtp_server_settings = {
 sender = smtp_server_settings['username']   #The Sender of the Email
 
 receivers = [                               # A list of recipients of the email
-	'rankencorp@gmail.com',                 # Just add yours to the list
+	'receiver1@gmail.com',                 # Just add yours to the list
 ]
 message = f'A Test Email from {sender}'     # The Message The recipeints get in their mailbox
 
